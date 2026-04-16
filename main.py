@@ -3,9 +3,8 @@
 # Result: a string
 def welcome_message(name:str) -> str:
    message = "Hello, " + name + "."
-
    return message
 
 
-message = welcome_message("anrathi@calpoly.edu")
+message = welcome_message("Jaswan@calpoly.edu")
 print(message)
