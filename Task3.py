@@ -68,9 +68,8 @@ def length_sum(L: list[str]) -> int:
 first = length_sum(["this", "is", "the", "first", "call"])
 second = length_sum(["second call"])
 third = length_sum(["another", "call"])
-print(first)
-print(second)
-print(third)
+print()
+
 
 def surprising(L: list[str], other: str) -> list[str]:
    L.append(other.upper())
