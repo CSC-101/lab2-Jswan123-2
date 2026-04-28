@@ -21,10 +21,6 @@ def function2(a:int, b:int, c:int) -> int:
    else:
       return 2*c     #In general when will a call to this fucntion evaluate this statment? Whenever all other circumstances for example a is not greater than both b and c and b is not greater than c.
 
-answer1= function2(3,2,1)     #What is the value of answer1? 2
-answer2= function2(2,3,1)     #What is the value of function2? 4
-answer3= function2(2,1,3)     #What is the value of answer 3? 6
-
 message = welcome_message("Jaswan@calpoly.edu")
 print(message)
 
@@ -33,7 +29,12 @@ second = smallest(2,2)    #What is the value of the second? Is this a reasonable
 print(first)
 print(second)
 
-
+answer1= function2(3,2,1)     #What is the value of answer1? 2
+answer2= function2(2,3,1)     #What is the value of function2? 4
+answer3= function2(2,1,3)     #What is the value of answer 3? 6
+print(answer1)
+print(answer2)
+print(answer3)
 
 from typing import Optional             # gain access to the Optional[X] type hint
 
@@ -67,9 +68,8 @@ def length_sum(L: list[str]) -> int:
 first = length_sum(["this", "is", "the", "first", "call"])
 second = length_sum(["second call"])
 third = length_sum(["another", "call"])
-print(first)
-print(second)
-print(third)
+print()
+
 
 def surprising(L: list[str], other: str) -> list[str]:
    L.append(other.upper())
@@ -79,8 +79,8 @@ def surprising(L: list[str], other: str) -> list[str]:
 words = ["this", "is", "confusing", "code."]
 first = surprising(words, "Avoid")
 second = surprising(words, "such.")
-# What is the value of words at this point? ["this", "is", "confusing", "code.","AVOID","SUCH."]
-# What are the values of first and second at this point? ["this", "is", "confusing", "code.","AVOID","SUCH."]
-# What happened? Since the list mutable we appended the list and updated.
+# What is the value of words at this point?
+# What are the values of first and second at this point?
+# What happened?
 print(first)
 print(second)
